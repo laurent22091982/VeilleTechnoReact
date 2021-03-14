@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import MyComponent from './MyComponent'
+import MyComponent from './Counter/MyComponent'
 const CounterWrapper = styled.div`
   margin: auto;
 `;
@@ -14,11 +14,9 @@ const Wrapper = styled.div`
 
 const Root = () => {
   return (
-    <Wrapper>
       <div className="App">
         <MyComponent /> 
       </div>
-    </Wrapper>
   );
 };
 
