@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Counter from "./Counter";
-
+import MyComponent from './MyComponent'
 const CounterWrapper = styled.div`
   margin: auto;
 `;
