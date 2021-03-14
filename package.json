@@ -26,11 +26,6 @@
     "test": "jest",
     "watch": "parcel src/index.html"
   },
-  "dependencies": {
-    "react": ">= 16.3.0",
-    "react-dom": ">= 16.3.0",
-    "styled-components": "~4.4.1"
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
