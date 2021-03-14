@@ -1,19 +1,16 @@
-version: 0.2
-
-phases:
-  install:
-    commands:
-      # Install dependencies needed for running tests
-      - npm install
-
-      # Upgrade AWS CLI to the latest version
-      - pip install --upgrade awscli
-  build:
-    commands:
-      - echo Building...
-      - yarn build
-artifacts:
-  files:
-    - "**/*"
-  discard-paths: no
-  base-directory: dist
+version: 0.1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - yarn install
+    build:
+      commands:
+        - yarn run build
+  artifacts:
+    baseDirectory: build
+      files:
+        - "**/*"
+    cache:
+      path:
+        - node_modules/**/*
