@@ -6,7 +6,7 @@ const Calcul = (props) => {
     const maVariable1 = parseInt(props.chiffre1);
     const maVariable2 = parseInt(props.chiffre2);
     
-    const resultat = props.typeCalcul === "Addition" ? (maVariable1 + maVariable2) : (maVariable1 - maVariable2);
+    const resultat = props.typeCalcul === "Addition" ? (maVariable1 + maVariable2) : (maVariable1 * maVariable2);
         
     console.log(resultat)
     if (props.typeCalcul){
